@@ -60,24 +60,38 @@
     {{ content }}
 
     <!-- ✅ Education 섹션 추가 -->
-    <section id="education">
-      <h2>Education</h2>
-      {% for edu in site.data.education %}
-        <p><strong>{{ edu.institution }}</strong> ({{ edu.dates }})<br>
+<section id="education">
+  <h2>Education</h2>
+  {% for edu in site.data.education %}
+    <div class="row">
+      <div class="eight columns">
+        <strong>{{ edu.institution }}</strong><br>
         {{ edu.degree }}
-        </p>
-      {% endfor %}
-    </section>
+      </div>
+      <div class="four columns right-align">
+        {{ edu.dates }}
+      </div>
+    </div>
+    <hr> <!-- 구분선 추가 -->
+  {% endfor %}
+</section>
 
-    <!-- ✅ Experience 섹션 추가 -->
-    <section id="experience">
-      <h2>Experience</h2>
-      {% for exp in site.data.experience %}
-        <p><strong>{{ exp.position }}</strong> - {{ exp.company }} ({{ exp.dates }})<br>
+<!-- ✅ Experience 섹션 추가 -->
+<section id="experience">
+  <h2>Experience</h2>
+  {% for exp in site.data.experience %}
+    <div class="row">
+      <div class="eight columns">
+        <strong>{{ exp.position }}</strong> - <span style="color: #007bff;">{{ exp.company }}</span><br>
         {{ exp.description }}
-        </p>
-      {% endfor %}
-    </section>
+      </div>
+      <div class="four columns right-align">
+        {{ exp.dates }}
+      </div>
+    </div>
+    <hr> <!-- 구분선 추가 -->
+  {% endfor %}
+</section>
 
     <div class="footer">
       <div class="row">
