@@ -1,7 +1,8 @@
-source:      .
+source: .
 destination: ./_site
-includes:    ./_includes
-baseurl: /msaveski
+includes: ./_includes
+baseurl: ""  # 기존 "/msaveski" → ""로 변경 (빈 값)
+url: "https://unjsp2002.github.io"  # 본인의 GitHub Pages 주소 추가
 
 collections:
   projects:
