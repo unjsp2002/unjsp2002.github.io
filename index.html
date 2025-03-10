@@ -2,40 +2,76 @@
 layout: default
 title: Home
 ---
+
 <!-- ========== About ========== -->
 <div class="docs-section" id="About">
-  <h4>Bio</h4>
-  <p>
-  I am an undergraduate student at Seoul National University (SNU), and my research primarily focuses on the biochemical mechanisms of neurological disorders.
-    I aim to study neuroscience using chemical tools. In particular, my recent research explores metabolic dynamics in modulating the chronic state of psychiatric disorders.
-  </p> 
+  <h4>About Me</h4>
+
+  <div class="row">
+    <!-- 프로필 사진 -->
+    <div class="three columns">
+      <img src="{{ site.data.main_info.profile_pic }}" class="u-max-full-width" alt="Profile Picture">
+    </div>
+
+    <div class="nine columns">
+      <p>
+        I am an undergraduate student at <strong>Seoul National University (SNU)</strong>, majoring in <strong>Materials Science & Chemistry</strong>.
+        My research primarily focuses on the **biochemical mechanisms of neurological disorders**, using **chemical tools to investigate metabolic pathways**.
+      </p>
+
+      <p>
+        In particular, my recent research explores **glycogen metabolism in astrocytes and its role in neuropathic pain**.
+      </p>
+
+      <p><strong>Research Interests:</strong>
+        <span class="tag">Metabolic Dynamics</span>
+        <span class="tag">Astrocyte Biology</span>
+        <span class="tag">Neuropathic Pain</span>
+        <span class="tag">Drug Delivery</span>
+      </p>
+
+      <p>
+        <a href="{{ site.data.main_info.github }}" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> |
+        <a href="{{ site.data.main_info.google_scholar }}" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a> |
+        <a href="{{ site.data.main_info.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </p>
+    </div>
+  </div>
 </div>
 
-<!--
-<div class="docs-section" id="prospective-students">  
-  <h4>Prospective Students</h4>
-  <p>
-  <span style="display: inline-block; margin-bottom: 5px">
-    <b>I'm recruiting PhD students to start Fall 2025 at the University of Washington!</b> 
-  </span>
-  <br/> 
-  <span style="display: inline-block; margin-bottom: 5px">
-    I'm looking for students passionate about developing new <u>social media algorithms</u>, both broadly and within the scope of this <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2403434" target="_blank">NSF grant</a> (collaboration with Stanford and Northwestern). For other examples, please see my recent publications. <br/>
-  </span>
-  <span style="display: inline-block; margin-bottom: 5px">
-    Students with strong technical skills and background or interest in social network analysis, machine learning, causal inference, or natural language processing would be a great fit.
-  </span>
-  <br/>
-  <span style="display: inline-block; margin-bottom: 5px">
-    If you are interested, please apply to the UW iSchool <a href="https://ischool.uw.edu/programs/phd/admissions" target="_blank">PhD program</a> and mention me in your application.
-  </span>
-  <br/>
-  <span>
-    If you have any questions, feel free to reach out.
-  </span>
-  </p> 
+<!-- ========== Education ========== -->
+<div class="docs-section" id="education">
+  <h4>Education</h4>
+  {% for edu in site.data.education %}
+    <div class="row">
+      <div class="eight columns">
+        <strong>{{ edu.institution }}</strong><br>
+        {{ edu.degree }}
+      </div>
+      <div class="four columns right-align">
+        {{ edu.dates }}
+      </div>
+    </div>
+    <hr>
+  {% endfor %}
 </div>
--->
+
+<!-- ========== Experience ========== -->
+<div class="docs-section" id="experience">
+  <h4>Experience</h4>
+  {% for exp in site.data.experience %}
+    <div class="row">
+      <div class="eight columns">
+        <strong>{{ exp.position }}</strong> - <span style="color: #007bff;">{{ exp.company }}</span><br>
+        {{ exp.description }}
+      </div>
+      <div class="four columns right-align">
+        {{ exp.dates }}
+      </div>
+    </div>
+    <hr>
+  {% endfor %}
+</div>
 
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
@@ -58,186 +94,9 @@ title: Home
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
           <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
         </div>
       {% endfor %}
     </div>
   </div>
 </div>
 
-<!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
-
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Vitæ</h4>
-
-  <p>Full Resume in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
-
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="docs-section" id="template">
-  <h4>Website Design</h4>
-  Since I made this website, many people have found this Jekyll template useful [
-  {% for template_user in site.data.template_users.template_users %}
-  <a href="{{ template_user }}" target="_blank">{{ forloop.index }}</a>{% if forloop.last %}{% else %},{% endif %}
-  {% endfor %}
-  ].
-  <!--<br/>-->
-  You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
-  Feel free to use it. <br/>
-
-  If you end up using it, please link to here and drop me an email.
-  I'm always happy to see people using it.
-</div>  
