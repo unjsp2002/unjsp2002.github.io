@@ -2,15 +2,14 @@ papers:
 
   - title: "ACC astrocyte glycogenolysis metabolic dynamics mediate neuropathic pain chronicity"
     authors: "<b>Junseo Park</b>, Sungjoong Lee"
-    venue: "Science Signaling': (submitted). 2025."
+    venue: "Science Signaling: (submitted). 2025."
     paper_pdf: "/assets/publications/2025_cn_causal_effects/paper.pdf"
     selected: y
 
-  - title: "Supernotes: Driving Consensus in Crowd-Sourced Fact-Checking"
-    authors: "Soham De, Michiel A. Bakker, Jay Baxter, <b>Martin Saveski</b>"
-    venue: "WWW'25: The Web Conference. 2025."
+  - title: "Neuronal circuit modulation mechanism of psychiatric effect on allergic rhinitis"
+    authors: "<b>Junseo Park</b>, et al."
+    venue: "(in preparation)"
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
-    code: "https://github.com/saveski-lab/supernotes"
     selected: y
 
   - title: "Social Media Algorithms Can Shape Affective Polarization via Exposure to Antidemocratic Attitudes and Partisan Animosity"
