@@ -2,7 +2,7 @@ papers:
 
   - title: "ACC astrocyte glycogenolysis metabolic dynamics mediate neuropathic pain chronicity"
     authors: "<b>Junseo Park</b>, Sungjoong Lee<sup>*</sup>"
-    venue: "Science Signaling: (submitted). 2025."
+    venue: "Science Signaling: (submitted). / BioRixv preprint. 2025."
     paper_pdf: "/assets/publications/2025_cn_causal_effects/paper.pdf"
     selected: y
 
@@ -18,8 +18,8 @@ papers:
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
     selected: n
 
-  - title: "Proposal of SARS-CoV-2 Surface Structure Specific Non-Invasive Sensor by ACE2@CNT-Electrode"
+  - title: "Proposal of SARS-CoV-2 surface structure specific non-invasive sensor by ACE2@CNT-Electrode"
     authors: "<b>Junseo Park</b>"
-    venue: "Science High School  graduation thesis, (2020)"
+    venue: "Science High School graduation thesis. 2020."
     selected: n
 
