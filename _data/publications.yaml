@@ -10,11 +10,15 @@ papers:
     authors: "<b>Junseo Park</b>, Yeonji Ko, Hyesung Park, Dayeon Lee, Minkyung Cha, Sungyon Kim<sup>*</sup>"
     venue: "(in preparation)"
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "Aggregation kinetic analysis of TDP-43 PLD in oxidative stress"
     authors: "Sohui Park<sup>‡</sup>, <b>Junseo Park<sup>‡</sup></b>, Jungho Lee<sup>*</sup>"
     venue: "(in preparation)"
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
-    selected: y
+    selected: n
 
+  - title: "Proposal of SARS-CoV-2 Surface Structure Specific Non-Invasive Sensor by ACE2@CNT-Electrode"
+    authors: "<b>Junseo Park</b>"
+    venue: "Science High School  graduation thesis, (2020)"
+    selected: n
