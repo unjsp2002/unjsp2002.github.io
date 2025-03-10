@@ -23,4 +23,3 @@ papers:
     venue: "Science High School  graduation thesis, (2020)"
     selected: n
 
-{% assign all_papers = site.data.publications.papers %}
