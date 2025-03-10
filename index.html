@@ -7,8 +7,8 @@ title: Home
 <div class="docs-section" id="About">
   <h4>About Me</h4>
 
-
-    <div class="nine columns">
+  <div class="row">
+    <div class="twelve columns">
       <p>
         I am an undergraduate student at <strong>Seoul National University (SNU)</strong>, majoring in <strong>Materials Science & Chemistry</strong>.
         My research primarily focuses on the **biochemical mechanisms of neurological disorders**, using **chemical tools to investigate metabolic pathways**.
@@ -18,14 +18,15 @@ title: Home
         In particular, my recent research explores **glycogen metabolism in astrocytes and its role in neuropathic pain**.
       </p>
 
-      <p><strong>Research Interests:</strong>
+      <p><strong>Research Interests:</strong>  
         <span class="tag">Metabolic Dynamics</span>
         <span class="tag">Astrocyte Biology</span>
         <span class="tag">Neuropathic Pain</span>
         <span class="tag">Drug Delivery</span>
       </p>
 
-      <p>
+      <!-- 소셜 미디어 및 링크 -->
+      <p class="social-links">
         <a href="{{ site.data.main_info.github }}" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> |
         <a href="{{ site.data.main_info.google_scholar }}" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a> |
         <a href="{{ site.data.main_info.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
@@ -38,18 +39,18 @@ title: Home
 <div class="docs-section" id="education">
   <h4>Education</h4>
   {% for edu in site.data.education %}
-    <div class="row">
+    <div class="row education-entry">
       <div class="eight columns">
         <strong>{{ edu.institution }}</strong><br>
         {{ edu.degree }}
       </div>
-      <div class="four columns right-align">
+      <div class="four columns education-dates">
         {{ edu.dates }}
       </div>
     </div>
-    <hr>
   {% endfor %}
 </div>
+
 
 
 <!-- ========== PUBLICATIONS ========== -->
