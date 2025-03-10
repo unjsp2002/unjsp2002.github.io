@@ -1,19 +1,19 @@
 papers:
 
   - title: "ACC astrocyte glycogenolysis metabolic dynamics mediate neuropathic pain chronicity"
-    authors: "<b>Junseo Park</b>, Sungjoong Lee"
+    authors: "<b>Junseo Park</b>, Sungjoong Lee<sup>*</sup>"
     venue: "Science Signaling: (submitted). 2025."
     paper_pdf: "/assets/publications/2025_cn_causal_effects/paper.pdf"
     selected: y
 
   - title: "Neuronal circuit modulation mechanism of psychiatric effect on allergic rhinitis"
-    authors: "<b>Junseo Park</b>, et al."
+    authors: "<b>Junseo Park</b>, Yeonji Ko, Hyesung Park, Dayeon Lee, Minkyung Cha, Sungyon Kim<sup>*</sup>"
     venue: "(in preparation)"
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
     selected: y
 
   - title: "Aggregation kinetic analysis of TDP-43 PLD in oxidative stress"
-    authors: "Sohui Park<sup>‡</sup>, <b>Junseo Park<sup>‡</sup></b>, Jungho Lee"
+    authors: "Sohui Park<sup>‡</sup>, <b>Junseo Park<sup>‡</sup></b>, Jungho Lee<sup>*</sup>"
     venue: "(in preparation)"
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
     selected: y
