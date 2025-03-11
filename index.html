@@ -105,10 +105,11 @@ title: Home
 <!-- ========== Experience ========== -->
 <div class="docs-section" id="experience">
   <h4>Experience</h4>
-  {% for exp in site.data.experience %}
+  {% for exp in site.data.experience.experiences %}
     <div class="row">
       <div class="eight columns">
         <strong>{{ exp.position }}</strong> - <span style="color: #007bff;">{{ exp.company }}</span><br>
+        <em>{{ exp.subtitle }}</em><br>
         {{ exp.description }}
       </div>
       <div class="four columns right-align">
@@ -118,6 +119,7 @@ title: Home
     <hr>
   {% endfor %}
 </div>
+
 
 
 <!-- ========== Leadership ========== -->
