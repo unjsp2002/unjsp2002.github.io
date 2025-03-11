@@ -101,6 +101,24 @@ title: Home
 </div>
 
 
+<!-- ========== POSTER PRESENTATIONS ========== -->
+<div class="docs-section" id="posters">
+  <h4>Poster Presentation</h4>
+  {% for poster in site.data.posters.posters %}
+    <div class="row">
+      <div class="three columns">
+        <strong>{{ poster.date }}</strong>
+      </div>
+      <div class="nine columns">
+        <strong>{{ poster.title }}</strong><br>
+        <em>{{ poster.conference }}</em>
+      </div>
+    </div>
+    <hr>
+  {% endfor %}
+</div>
+
+
 
 <!-- ========== Experience ========== -->
 <div class="docs-section" id="experience">
