@@ -99,6 +99,18 @@ h4 {
   text-align: left;
 }
 
+/* 포스터 날짜를 왼쪽 정렬 */
+.poster-date {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* 포스터 내용 오른쪽 정렬 및 간격 조정 */
+.poster-content {
+  text-align: left;
+  padding-left: 15px;
+}
+
 
 
 /* ========== Experience 및 Leadership 스타일 ========== */
