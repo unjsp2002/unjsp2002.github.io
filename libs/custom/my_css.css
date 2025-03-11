@@ -86,7 +86,7 @@ h4 {
 }
 
 #posters .row {
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* 간격을 조정 (기본값보다 줄이기) */
 }
 
 #posters .three.columns {
