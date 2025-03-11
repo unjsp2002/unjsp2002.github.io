@@ -105,17 +105,18 @@ title: Home
 <div class="docs-section" id="posters">
   <h4>Poster Presentation</h4>
   {% for poster in site.data.posters.posters %}
-    <div class="row">
-      <div class="three columns">
+    <div class="row poster-entry">
+      <div class="three columns poster-date">
         <strong>{{ poster.date }}</strong>
       </div>
-      <div class="nine columns">
+      <div class="nine columns poster-content">
         <strong>{{ poster.title }}</strong><br>
         <em>{{ poster.conference }}</em>
       </div>
     </div>
   {% endfor %}
 </div>
+
 
 
 
